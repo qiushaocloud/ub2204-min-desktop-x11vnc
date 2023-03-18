@@ -17,6 +17,7 @@ RUN apt-get update && \
         xvfb \
         fluxbox \
         x11vnc \
+        xterm \
         locales && \
     locale-gen zh_CN.UTF-8 && \
     apt-get clean && \

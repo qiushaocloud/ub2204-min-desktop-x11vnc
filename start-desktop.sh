@@ -21,6 +21,9 @@ else
 fi
 sleep 2
 
+# Start xterm
+xterm &
+
 # Keep the container running
 while true
 do
