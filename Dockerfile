@@ -1,4 +1,5 @@
-FROM ubuntu:22.04
+# FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 ENV DISPLAY=:0 \
     LANG=zh_CN.UTF-8 \
