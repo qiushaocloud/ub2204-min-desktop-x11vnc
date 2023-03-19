@@ -19,6 +19,8 @@ RUN apt-get update && \
         fluxbox \
         x11vnc \
         xterm \
+        xfonts-wqy \
+        fonts-wqy-zenhei \
         locales \
         language-pack-zh-hans && \
     locale-gen zh_CN.UTF-8 && \
