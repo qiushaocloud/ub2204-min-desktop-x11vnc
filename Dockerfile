@@ -1,9 +1,8 @@
-# FROM ubuntu:22.04
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV DISPLAY=:0 \
     LANG=zh_CN.UTF-8 \
-    LANGUAGE=zh_CN:zh \
+    LANGUAGE=zh_CN.UTF-8 \
     LC_ALL=zh_CN.UTF-8 \
     SCREEN_WIDTH=1280 \
     SCREEN_HEIGHT=720 \
@@ -19,8 +18,10 @@ RUN apt-get update && \
         fluxbox \
         x11vnc \
         xterm \
-        locales && \
+        locales \
+        language-pack-zh-hans && \
     locale-gen zh_CN.UTF-8 && \
+    update-locale LANG=zh_CN.UTF-8 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
