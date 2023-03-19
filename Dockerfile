@@ -13,6 +13,7 @@ ENV DISPLAY=:0 \
 RUN apt-get update && \
     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo $TZ > /etc/timezone && \
+    apt-get install -y apt-utils && \
     apt-get install -y \
         xvfb \
         fluxbox \
