@@ -18,6 +18,7 @@ RUN apt-get update && \
         xvfb \
         fluxbox \
         x11vnc \
+        vim \
         xterm \
         xfonts-wqy \
         fonts-wqy-zenhei \
@@ -29,7 +30,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY start-desktop.sh /start-desktop.sh
-RUN chmod +x /start-desktop.sh
+RUN chmod +x /start-desktop.sh && \
+    echo "XTerm*faceName: WenQuanYi Micro Hei Mono" >> /etc/X11/app-defaults/XTerm
 
 EXPOSE 5900
 
