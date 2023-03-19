@@ -31,7 +31,7 @@ RUN apt-get update && \
 
 COPY start-desktop.sh /start-desktop.sh
 RUN chmod +x /start-desktop.sh && \
-    echo "XTerm*faceName: WenQuanYi Micro Hei Mono" >> /etc/X11/app-defaults/XTerm
+    echo "XTerm*faceName: WenQuanYi Zen Hei" >> /etc/X11/app-defaults/XTerm
 
 EXPOSE 5900
 
