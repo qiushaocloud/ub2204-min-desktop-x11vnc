@@ -10,15 +10,15 @@ ubuntu 22.04 desktop environment minimal image, supports Chinese, integrates xvf
 4. Check the log: docker logs qiushaocloud-ub2204-min-desktop-x11vnc
 
 #### docker instructions
-1. Run the command: `docker run --name qiushaocloud-ub2204-min-desktop-x11vnc -d -p 5900:5900 -e SCREEN_WIDTH=1280 -e SCREEN_HEIGHT=720 -e VNC_PASSWORD= qiushaocloud/ub2204-min-desktop-x11vnc `
+1. Run the command: `docker run --name qiushaocloud-ub2204-min-desktop-x11vnc -d -p 5900:5900 -e SCREEN_WIDTH=1920 -e SCREEN_HEIGHT=1080 -e VNC_PASSWORD= qiushaocloud/ub2204-min-desktop-x11vnc `
 2. Check the log: docker logs qiushaocloud-ub2204-min-desktop-x11vnc
 
 #### Environment variables
 ```
 # VNC_PORT, SCREEN_WIDTH, SCREEN_HEIGHT, VNC_PASSWORD to specify port, screen width and height, password.
 VNC_PORT = 5900
-SCREEN_WIDTH = 1280
-SCREEN_HEIGHT = 720
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
 VNC_PASSWORD=
 ```
 

@@ -10,15 +10,15 @@ ubuntu 22.04 桌面环境最小镜像，支持中文，集成了 xvfb、fluxbox�
 4.  查看日志: docker logs qiushaocloud-ub2204-min-desktop-x11vnc
 
 #### docker 使用说明
-1. 运行命令: `docker run --name qiushaocloud-ub2204-min-desktop-x11vnc -d -p 5900:5900 -e SCREEN_WIDTH=1280 -e SCREEN_HEIGHT=720 -e VNC_PASSWORD= qiushaocloud/ub2204-min-desktop-x11vnc`
+1. 运行命令: `docker run --name qiushaocloud-ub2204-min-desktop-x11vnc -d -p 5900:5900 -e SCREEN_WIDTH=1920 -e SCREEN_HEIGHT=1080 -e VNC_PASSWORD= qiushaocloud/ub2204-min-desktop-x11vnc`
 2.  查看日志: docker logs qiushaocloud-ub2204-min-desktop-x11vnc
 
 #### 环境变量
 ```
 # VNC_PORT、SCREEN_WIDTH、SCREEN_HEIGHT、VNC_PASSWORD 来指定端口、屏幕宽高、密码。
 VNC_PORT = 5900
-SCREEN_WIDTH = 1280
-SCREEN_HEIGHT = 720
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
 VNC_PASSWORD = 
 ```
 
